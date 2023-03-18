@@ -1,0 +1,35 @@
+//Created table and declared variables 
+
+CREATE TABLE grocery (id integer primary key, name text, color text, price integer, pounds integer);
+
+//Intialized variables 
+
+INSERT INTO grocery VALUES 
+(1,"apples","red",2.60,2),
+(2,"apples","green",3.90,3),
+(3,"grapes","red",2.40,1),
+(4,"grapes","green",2.40,1),
+(5,"bananas","yellow",1.80,3),
+(6,"oranges", "orange",3.00,2),
+(7,"peaches","orange",3.20,2),
+(8,"plums","purple",4.80,2),
+(9,"pears","green",1.50,3),
+(10,"pineapple","yellow",3.50,2),
+(11,"cherries","red",8.99,1),
+(12,"blackberries","black",5.60,1),
+(13,"strawberries","red",2.50,1),
+(14,"raspberries","red",6.88,1),
+(15,"blueberries","blue",4.39,1);
+
+//Displayed database
+
+SELECT * FROM grocery;
+
+//Displayed database with constraints
+
+SELECT name,price FROM grocery;
+
+//Displayed database with constraints with numeric value
+
+SELECT name,price FROM grocery WHERE price >=2.50;
+
